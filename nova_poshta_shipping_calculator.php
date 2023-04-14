@@ -260,6 +260,14 @@ cityRecipientInput.addEventListener('input', async () => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('np-shipping-calculator-form');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Запобігти перезавантаженню сторінки при натисканні кнопки
+        const weight = document.getElementById("package-weight").value;
+              });
+                    });
 // Функція для розрахунку вартості доставки
 async function calculateShippingCost(formData) {
 const apiKey = '74450b57b7f715b98cd7fbc46bd597bf'; // Замінити на власний ключ API Нової Пошти
